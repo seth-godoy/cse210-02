@@ -1,6 +1,43 @@
-+ main class: 
-- start the game
+The player starts the game with 300 points.
+Individual cards are represented as a number from 1 to 13.
+The current card is displayed.
+The player guesses if the next one will be higher or lower.
+The the next card is displayed.
+The player earns 100 points if they guessed correctly.
+The player loses 75 points if they guessed incorrectly.
+If a player reaches 0 points the game is over.
+If a player has more than 0 points they decide if they want to keep playing.
+If a player decides not to play again the game is over.
 
 
 + director class:
+- A person who directs the game.
 - 
+    Attributes: 
+        card(int) - value of the cards
+        is_playing - boolean 
+        score(int) - the actual point
+        total score(int) - the total point for the player
+    
+    Methods: 
+        start game: start the game in order
+        get inputs: 1. display the first card
+                    2. ask the user for answer of the player
+        do updates: 3. draw the second card
+                    4. calculate score
+        do outputs: 5. show on the screen the score
+                    6. ask if they want to play again
+
+    
+
++ deck class:
+- draws a card with a value between 1-13
+    Attributes: 
+        value(int) - stores card value 1-13
+        point(int) - store the point
+        
+    Methods: 
+        draw_card: 1. outputs a random number between 1 and 13 and assigns it to self.value and the respective point.
+
+    (We can modify die.py from the previous assignment and copy and paste it into this with 1-13)
+
